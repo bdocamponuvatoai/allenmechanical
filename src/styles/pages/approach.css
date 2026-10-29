@@ -1,0 +1,96 @@
+.approach-steps {
+  max-width: 1050px;
+  padding-block: 65px 100px;
+}
+.approach-steps article {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 70px;
+  border-bottom: 1px solid var(--line);
+  padding-block: 50px;
+}
+.approach-steps article:last-child {
+  border: 0;
+  padding-bottom: 0;
+}
+.approach-steps article > span {
+  font-size: 95px;
+  line-height: 1;
+  letter-spacing: -0.06em;
+  color: #9bad9f;
+  font-weight: 400;
+}
+.approach-steps h2 {
+  font-size: 42px;
+}
+.approach-steps p:not(.eyebrow) {
+  font-size: 13px;
+  line-height: 1.9;
+  max-width: 650px;
+}
+.approach-steps ul {
+  padding-left: 18px;
+  font-size: 12px;
+  line-height: 2.3;
+  color: var(--muted);
+}
+@media (max-width: 900px) {
+  .approach-steps article {
+    grid-template-columns: 130px 1fr;
+    gap: 45px;
+    padding-block: 40px;
+  }
+  .approach-steps article > span {
+    font-size: 80px;
+  }
+  .approach-steps h2 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 700px) {
+  .approach-steps {
+    padding-block: 25px 60px;
+  }
+  .approach-steps article {
+    grid-template-columns: 55px 1fr;
+    gap: 25px;
+    padding-block: 35px;
+  }
+  .approach-steps article > span {
+    font-size: 43px;
+    padding-top: 3px;
+  }
+  .approach-steps .eyebrow {
+    font-size: 8px;
+    margin-bottom: 17px;
+  }
+  .approach-steps h2 {
+    font-size: 29px;
+    line-height: 1.2;
+  }
+  .approach-steps p:not(.eyebrow) {
+    font-size: 12px;
+  }
+  .approach-steps ul {
+    font-size: 11px;
+    line-height: 2.1;
+  }
+  .approach-steps .button {
+    font-size: 10px;
+    padding: 15px 16px;
+    gap: 16px;
+    min-height: 49px;
+  }
+}
+@media (max-width: 360px) {
+  .approach-steps article {
+    grid-template-columns: 40px 1fr;
+    gap: 20px;
+  }
+  .approach-steps article > span {
+    font-size: 35px;
+  }
+  .approach-steps h2 {
+    font-size: 27px;
+  }
+}

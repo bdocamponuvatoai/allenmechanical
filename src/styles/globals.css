@@ -1,0 +1,23 @@
+/*
+ * Partials are imported in the order their rules first appear in the legacy
+ * stylesheet. The order matters: later partials rely on cascade position.
+ */
+@import "./base/tokens.css";
+@import "./base/base.css";
+@import "./components/button.css";
+@import "./components/text-link.css";
+@import "./components/header.css";
+@import "./pages/home.css";
+@import "./sections/faq.css";
+@import "./sections/project-cta.css";
+@import "./components/footer.css";
+@import "./components/mobile-bar.css";
+@import "./sections/page-intro.css";
+@import "./pages/capabilities.css";
+@import "./pages/capability-detail.css";
+@import "./sections/wide-photo.css";
+@import "./pages/approach.css";
+@import "./pages/about.css";
+@import "./pages/contact.css";
+@import "./pages/privacy.css";
+@import "./pages/start-project.css";

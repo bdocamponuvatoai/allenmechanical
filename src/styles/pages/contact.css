@@ -1,0 +1,187 @@
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 100px;
+  padding-block: 25px 90px;
+}
+.contact-primary {
+  border-top: 1px solid var(--line);
+  padding-top: 28px;
+}
+.large-contact {
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: -0.055em;
+  display: block;
+  font-weight: 550;
+}
+.large-contact > span {
+  font-size: 29px;
+  margin-left: 25px;
+}
+.email-contact {
+  display: block;
+  font-size: 19px;
+  letter-spacing: -0.025em;
+  margin-top: 18px;
+  overflow-wrap: anywhere;
+}
+.email-contact > span {
+  margin-left: 17px;
+}
+.contact-person {
+  display: flex;
+  gap: 35px;
+  border-top: 1px solid var(--line);
+  padding-top: 28px;
+  margin-top: 42px;
+}
+.contact-person > span {
+  font: 9px/1.5 var(--mono);
+  color: var(--muted);
+  padding-top: 5px;
+}
+.contact-person p {
+  font-size: 12px;
+  line-height: 1.8;
+  margin: 0;
+}
+.contact-person strong {
+  font-weight: 650;
+  color: var(--ink);
+}
+.contact-address {
+  padding: 38px;
+  background: var(--mist);
+}
+.contact-address h2 {
+  font-size: 35px;
+}
+.contact-address address {
+  font-style: normal;
+  font-size: 13px;
+  line-height: 1.9;
+}
+.contact-address .small {
+  font-size: 10px;
+  margin: 20px 0 0;
+  max-width: 320px;
+}
+.brief-prompt {
+  border-block: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 90px;
+  padding-block: 55px;
+  align-items: center;
+}
+.brief-prompt h2 {
+  font-size: 44px;
+  margin: 0;
+}
+.brief-prompt > div > p:not(.eyebrow) {
+  font-size: 13px;
+  line-height: 1.9;
+  max-width: 400px;
+}
+@media (max-width: 1180px) {
+  .contact-layout {
+    gap: 65px;
+  }
+  .large-contact {
+    font-size: 38px;
+  }
+}
+@media (max-width: 900px) {
+  .contact-layout {
+    gap: 40px;
+    padding-bottom: 75px;
+  }
+  .large-contact {
+    font-size: 32px;
+  }
+  .large-contact > span {
+    font-size: 23px;
+    margin-left: 15px;
+  }
+  .email-contact {
+    font-size: 16px;
+  }
+  .contact-address {
+    padding: 28px;
+  }
+  .contact-address h2 {
+    font-size: 29px;
+  }
+  .contact-person {
+    gap: 25px;
+  }
+  .brief-prompt {
+    gap: 50px;
+  }
+  .brief-prompt h2 {
+    font-size: 36px;
+  }
+  .brief-prompt > div > p:not(.eyebrow) {
+    font-size: 11px;
+  }
+}
+@media (max-width: 700px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding-block: 15px 55px;
+  }
+  .large-contact {
+    font-size: 37px;
+  }
+  .large-contact > span {
+    font-size: 25px;
+    margin-left: 20px;
+  }
+  .email-contact {
+    font-size: 17px;
+  }
+  .contact-person {
+    margin-top: 30px;
+    padding-top: 23px;
+  }
+  .contact-person > span {
+    font-size: 8px;
+  }
+  .contact-person p {
+    font-size: 11px;
+  }
+  .contact-address {
+    padding: 30px;
+  }
+  .contact-address h2 {
+    font-size: 34px;
+  }
+  .contact-address address {
+    font-size: 12px;
+  }
+  .brief-prompt {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding-block: 40px;
+  }
+  .brief-prompt h2 {
+    font-size: 37px;
+  }
+  .brief-prompt > div > p:not(.eyebrow) {
+    font-size: 12px;
+  }
+  .brief-prompt .button {
+    font-size: 11px;
+  }
+}
+@media (max-width: 360px) {
+  .large-contact {
+    font-size: 32px;
+  }
+  .large-contact > span {
+    margin-left: 15px;
+    font-size: 22px;
+  }
+}

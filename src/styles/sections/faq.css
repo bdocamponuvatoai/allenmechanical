@@ -1,0 +1,70 @@
+.faq-section {
+  padding-block: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 80px;
+}
+.faq-list details {
+  border-bottom: 1px solid var(--line);
+}
+.faq-list details:first-child {
+  border-top: 1px solid var(--line);
+}
+.faq-list summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 23px 0;
+  font-size: 13px;
+  line-height: 1.6;
+  font-weight: 650;
+  list-style: none;
+  cursor: pointer;
+}
+.faq-list summary::-webkit-details-marker {
+  display: none;
+}
+.faq-list summary span {
+  font-size: 23px;
+  font-weight: 400;
+  transition: transform 0.2s;
+}
+.faq-list details[open] summary span {
+  transform: rotate(45deg);
+}
+.faq-list p {
+  font-size: 12px;
+  line-height: 1.9;
+  margin: 0 30px 25px 0;
+}
+@media (max-width: 900px) {
+  .faq-section {
+    padding-block: 75px;
+    gap: 50px;
+  }
+  .faq-list summary {
+    font-size: 12px;
+  }
+  .faq-list p {
+    font-size: 11px;
+  }
+}
+@media (max-width: 700px) {
+  .faq-section {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding-block: 60px;
+  }
+  .faq-section h2 {
+    font-size: 40px;
+  }
+  .faq-list summary {
+    font-size: 12px;
+    padding: 21px 0;
+  }
+  .faq-list p {
+    font-size: 11px;
+    margin-right: 15px;
+  }
+}
